@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fb0808;
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #555555 2px solid;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header ul li :hover {
+    color: rgb(255, 90, 90);
+}
+
+header a {
+    padding: 0 20px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+#about {
+    padding: 50px 0;
+    background-color: #e7fc5f;
+    border-bottom: #555555 2px solid;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+#about p{
+    font-size: 20px;
+}
+
+#now-showing {
+    background-color: #f4fe6f;
+    border-bottom: #2c2c2c 1px solid;
+}
+
+#upcoming {
+    background-color: #eff9a3;
+    border-bottom: #353535 1px solid;
+}
+
+#contact {
+    background-color: #fafbd8;
+    border-bottom: #353535 1px solid;
+}
+
+#welcome {
+    background: #dbfb3d;
+    color: #fb4848;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    border-bottom: #343434 1px solid;
+}
+
+#welcome h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
+}
+
+#welcome p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 #000;
+}
+
+#welcome .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#welcome .btn:hover {
+    background: #555;
+}
+
+.movies-section {
+    padding: 50px 0;
+}
+
+.movies-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.movies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.movie {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #313131;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.movie h3 {
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border: 2px solid #353535;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #2e2e2e;
+    border-radius: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    header ul {
+        display: block;
+        text-align: center;
+    }
+
+    header li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .movies {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie {
+        width: 80%;
+    }
+}
+
